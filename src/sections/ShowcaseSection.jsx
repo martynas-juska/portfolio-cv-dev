@@ -139,13 +139,13 @@ export default function ShowcaseSection() {
                     <ProjectCard 
                         title="3D abandoned house with a graveyard environment map"
                         img="/images/projects/house-3d.png"
-                        visitUrl="house-at-night.vercel.app"
+                        visitUrl="https://house-at-night.vercel.app"
                         githubUrl="https://github.com/martynas-juska/house-at-night.git"
                     />
                     <ProjectCard 
                         title="3D liquid metal wobbling sphere build with WebGL Shader language"
                         img="/images/projects/wobble-3d.png"
-                        visitUrl="wobbling-sphere-dark.vercel.app"
+                        visitUrl="https://wobbling-sphere-dark.vercel.app"
                         githubUrl="https://github.com/martynas-juska/wobbling-sphere-dark.git"
                     />
                 </div>
