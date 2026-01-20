@@ -48,7 +48,7 @@ const abilities = [
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
 ];
-;
+
 
 
 const expCards = [
@@ -115,13 +115,7 @@ const expCards = [
 export {
   words,
   abilities,
-  logoIconsList,
   counterItems,
   expCards,
-  expLogos,
-  testimonials,
-  socialImgs,
-  techStackIcons,
-  techStackImgs,
   navLinks,
 };
