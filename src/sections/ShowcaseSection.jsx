@@ -109,7 +109,7 @@ export default function ShowcaseSection() {
                             isLarge
                             title="Cocktails recipes landing page with GSAP animations experience"
                             img="/images/projects/cocktails-hero.png"
-                            visitUrl="https://vercel.com/martynas-projects-6b8782e6/cocktails"
+                            visitUrl="https://cocktails-lovat-six.vercel.app/"
                             githubUrl="https://github.com/martynas-juska/cocktails.git"
                         />
                         <ProjectCard 
