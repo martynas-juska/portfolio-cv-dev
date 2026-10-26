@@ -53,7 +53,7 @@ const abilities = [
 
 const expCards = [
   {
-    title: "Senior Business Support – eFront",
+    title: "eFront Business Solutions Senior Officer",
     company: "Alter Domus",
     date: "Jul 2022 – Present",
     location: "Vilnius, Lithuania (Hybrid)",
