@@ -6,10 +6,15 @@ import ButtonProjects from '../components/Button-Projects'
 gsap.registerPlugin(ScrollTrigger)
 
 const ProjectCard = ({ title, img, visitUrl, githubUrl, isLarge = false }) => {
+    //Old version:
+    // const handleCardClick = () => {
+    //     if (window.innerWidth < 1024) {
+    //         window.open(visitUrl, "_blank", "noopener,noreferrer");
+    //     }
+    // };
+    //New v with clickable images
     const handleCardClick = () => {
-        if (window.innerWidth < 1024) {
-            window.open(visitUrl, "_blank", "noopener,noreferrer");
-        }
+        window.open(visitUrl, "_blank", "noopener,noreferrer");
     };
 
     return (
@@ -75,15 +80,15 @@ export default function ShowcaseSection() {
                 // RIGHT SIDE: High Velocity
                 // Travels 1600px total distance
                 gsap.fromTo(rightColumnRef.current, 
-                    { y: 300 }, 
+                    { y: 100 }, 
                     {
-                        y: -1000,
+                        y: -2300,
                         ease: 'none',
                         scrollTrigger: {
                             trigger: containerRef.current,
                             start: 'top bottom',
                             end: 'bottom top',
-                            scrub: 0.2, // Very reactive and "fast" feel
+                            scrub: 0.05, // Very reactive and "fast" feel
                         }
                     }
                 );
@@ -131,10 +136,10 @@ export default function ShowcaseSection() {
                         githubUrl="https://github.com/martynas-juska/stock-tracking-app.git"
                     />
                     <ProjectCard 
-                        title="Web dev portfolio focused on freelancing and 3D skills showcase"
-                        img="/images/projects/portfolio-3d.png"
-                        visitUrl="https://behind-axis.webflow.io/"
-                        githubUrl="https://behind-axis.webflow.io/"
+                        title="Educational blog website focused on Penguins"
+                        img="/images/projects/penguin-blog-hero.jpg"
+                        visitUrl="https://blog-penguin-seven.vercel.app"
+                        githubUrl="https://github.com/martynas-juska/blog-penguin.git"
                     />
                     <ProjectCard 
                         title="3D abandoned house with a graveyard environment map"
@@ -148,6 +153,13 @@ export default function ShowcaseSection() {
                         visitUrl="https://wobbling-sphere-dark.vercel.app"
                         githubUrl="https://github.com/martynas-juska/wobbling-sphere-dark.git"
                     />
+                    <ProjectCard 
+                        title="AI SaaS prototype generating furnished apartment from 2d plan"
+                        img="/images/projects/2d-room.jpg"
+                        visitUrl="https://room-arch-mvp.vercel.app"
+                        githubUrl="https://github.com/martynas-juska/room-arch-MVP.git"
+                    />
+
                 </div>
             </div>
         </section>
