@@ -156,8 +156,8 @@ export default function ShowcaseSection() {
                     <ProjectCard 
                         title="AI SaaS prototype generating furnished apartment from 2d plan"
                         img="/images/projects/2d-room.jpg"
-                        visitUrl="https://room-arch-mvp.vercel.app"
-                        githubUrl="https://github.com/martynas-juska/room-arch-MVP.git"
+                        visitUrl="https://genai-jet-seven.vercel.app/"
+                        githubUrl="https://genai-jet-seven.vercel.app/"
                     />
 
                 </div>
